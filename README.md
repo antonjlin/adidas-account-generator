@@ -7,7 +7,7 @@ An Adidas.com account generator that creates accounts without requiring a captch
 * Uses gmail dot trick - ```example@gmail.com == e.x.ample@gmail.com == e.x.a.m.p.l.e@gmail.com == examp.l.e@gmail.com``` and so on.
 * You can create 2*(n-1) unique accounts where n equals the amount of charachters you have in your email.
 * Base email addresses must not have dots in them already.
-
+![](https://github.com/antonjlin/adidas-account-generator/blob/master/Screen%20Shot%202018-01-02%20at%2011.51.38%20PM.png)
 ## Make login links
 To make login links, copy and paste this link into your browser.
 ```
