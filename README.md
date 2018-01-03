@@ -39,4 +39,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Feel free to contribute to this!
-* Made by [Anton Lin]
+* Made by [Anton Lin](https//:www.github.com/antonjlin)
