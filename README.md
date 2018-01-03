@@ -4,7 +4,7 @@ An Adidas.com account generator that creates accounts without requiring a captch
 *Exports account info to a .txt file ```createdaccounts.txt```
 * NOTE: This currently does not support proxies. In an effort to not get softbanned by adidas, it it not threaded. The code is there for proxy and threading but it's still buggy and in development. Feel free to contribute. If you put proxies into the file it will automatically use them and start threading (untested).
 * Proxies can be ip or user/pass verified.
-* Uses gmail dot trick - ```antonjlin@gmail.com == anton.jlin@gmail.com == a.n.t.o.n.j.l.i.n@gmail.com == a.n.t.o.njlin@gmail.com``` and so on.
+* Uses gmail dot trick - ```example@gmail.com == e.x.ample@gmail.com == e.x.a.m.p.l.e@gmail.com == examp.l.e@gmail.com``` and so on.
 * You can create 2*(n-1) unique accounts where n equals the amount of charachters you have in your email.
 * Base email addresses must not have dots in them already.
 
