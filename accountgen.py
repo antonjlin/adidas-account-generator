@@ -373,9 +373,10 @@ def accountgenner(x, runs):
                                     currenttime4 = currenttime3.split(" ")[1]
                                     currenttime5 = currenttime4.split(".")[0]
                                     accountstring = "%s:%s" % (email, threadpass)
-                                    log.write("[" + currenttime5 + "]:" + accountstring + "\n")
+                                    #log.write("[" + currenttime5 + "]:" + accountstring + "\n")
+                                    log.write(accountstring + "\n")
                                     print("-------------------------------------")
-                                    print("   Task %s: Success, created account: \n   Email: %s \n   Password:" %s % (x,email, threadpass))
+                                    print("   Task {}: Success, created account: \n   Email: {} \n   Password: {}".format(x,email, threadpass))
                                     print("-------------------------------------")
                                     finalproceed = True
 
