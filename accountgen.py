@@ -27,6 +27,7 @@ emailin = input("Email: ")
 
 password = input('Password: ')
 
+
 open("createdaccounts.txt", "a")
 log = open('createdaccounts.txt', 'a')
 
@@ -79,9 +80,9 @@ def accountgenner(x, runs):
             proxyuser = proxyuser.rstrip()
 
         if userpass == True:
-            proxies = {'https': 'https://' + proxyuser + ':' + proxypass + '@' + userpassproxy}
+            proxies = {'http': 'http://' + proxyuser + ':' + proxypass + '@' + userpassproxy}
         if userpass == False:
-            proxies = {'https': 'https://' + proxy}
+            proxies = {'http': 'http://' + proxy}
 
 #============================================
 
@@ -278,7 +279,7 @@ def accountgenner(x, runs):
 
                     accountlink2 = part1 + 'MiAccount-Register/' + session2
 
-                    headers2 = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36','Upgrade-Insecure-Requests': '1', 'Host': adidasregion, 'Origin': 'https://' + adidasregion,'Referer': accountlink}
+                    headers2 = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36','Upgrade-Insecure-Requests': '1', 'Host': adidasregion, 'Origin': 'http://' + adidasregion,'Referer': accountlink}
 
                     payload2 = {'dwfrm_milogininfo_email': email, 'dwfrm_milogininfo_password': threadpass,'dwfrm_milogininfo_newpasswordconfirm': threadpass, 'dwfrm_milogininfo_step2': 'Next','dwfrm_milogininfo_securekey': securekey2}
 
@@ -357,7 +358,7 @@ def accountgenner(x, runs):
                             if proceed6 == True:
 
                                 accountlink3 = part1 + 'MiAccount-Register/' + session3
-                                headers2 = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36','Upgrade-Insecure-Requests': '1', 'Host': adidasregion, 'Origin': 'https://' + adidasregion,'Referer': accountlink}
+                                headers2 = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36','Upgrade-Insecure-Requests': '1', 'Host': adidasregion, 'Origin': 'http://' + adidasregion,'Referer': accountlink}
 
                                 payload3 = {'dwfrm_micommunicinfo_agreeterms': 'true', 'dwfrm_micommunicinfo_step3': 'Register','dwfrm_micommunicinfo_securekey': securekey3}
 
@@ -398,6 +399,7 @@ for i in range(0, tasks):
         #thread
         t = Thread(target=accountgenner, args=(i,runs))
         t.start()
+        time.sleep(2)
     else:
         #dont thread to avoid banning.
         accountgenner(i,runs)
