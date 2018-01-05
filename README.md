@@ -26,10 +26,10 @@ pip3 install bs4
 ```
 4. cd into the folder you cloned the repo in. 
 ```
-cd documents/github/adidas-account-tester (or whatever directory you downloaded this folder to)
+cd documents/github/adidas-account-creator (or whatever directory you downloaded this folder to)
 python3 accountgen.py
 ```
-
+5. YOU DONT NEED TO EDIT THE SCRIPT. IT WILL PROMPT YOU FOR AN EMAIL AND PASSWORD. Do not change it inside the file.
 ## ToDo
 - [X] Account creation
 - [X] Threading and proxies (kinda there, but use at your own risk)
