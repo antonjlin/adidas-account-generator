@@ -79,10 +79,12 @@ def accountgenner(x, runs):
             proxypass = proxy.split(":")[3]
             proxyuser = proxyuser.rstrip()
 
-        if userpass == True:
-            proxies = {'http': 'http://' + proxyuser + ':' + proxypass + '@' + userpassproxy}
-        if userpass == False:
-            proxies = {'http': 'http://' + proxy}
+		if userpass == True:
+			proxies = {'http': 'http://' + proxyuser + ':' + proxypass + '@' + userpassproxy,
+						'https': 'https://' + proxyuser + ':' + proxypass + '@' + userpassproxy}
+		if userpass == False:
+			proxies = {'http': 'http://' + proxy,
+			'https': 'https://' + proxy}
 
 #============================================
 
