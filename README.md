@@ -42,3 +42,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Credit
 * Made by [Anton Lin](https://github.com/user/antonjlin)
 * Feel free to contribute to this and submit a pull request
+* Donate me a cup of coffee using:
+*   BTC: 1PxNNeap6YvuefLuDSTykGBA5Y4xHnvtxB
+*   ETH: 0x00B68816864d9e334FDF5f5eeb032D1DC57951D4
+*   LTC: LfkfCoeJL5z6fARtZJKpFfMaNqXnA5GAhy
